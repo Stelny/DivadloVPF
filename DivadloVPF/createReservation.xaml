@@ -1,0 +1,23 @@
+﻿<Page 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    x:Class="DivadloVPF.createReservation"
+    Title="Markup And Code-Behind Page" d:DesignWidth="275.82" d:DesignHeight="192.131">
+    <!-- Page Content Goes Here -->
+    <Grid MaxWidth="400" Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+    
+        <TextBlock Grid.Row="0" Text="Jméno"/>
+        <TextBox Grid.Row="1"/>
+        <TextBlock Grid.Row="2" Text="Email"/>
+        <TextBox Grid.Row="3"/>
+        <Button Grid.Row="4" Content="Odeslat" Margin="0 10 0 0"></Button>
+    </Grid>
+</Page>

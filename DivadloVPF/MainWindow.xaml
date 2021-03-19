@@ -1,0 +1,32 @@
+﻿<Window x:Class="DivadloVPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DivadloVPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <StackPanel Margin="10">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Name="homepage_but"  Margin="0 0 10 0" Grid.Column="0" Content="Hlavní strana" Click="homepage_button" />
+            <Button Name="scene_but"  Grid.Column="1" Content="Představení" Click="scene_button" />
+            <Button Name="settings_but" Margin="10 0 0 0" Grid.Column="2" Content="Nastavení sálu" Click="settings_switch" />
+        </Grid>
+
+        <Frame NavigationUIVisibility="Hidden" x:Name="contentControl" Grid.Row="1"/>
+    </StackPanel>
+ 
+
+
+
+
+
+</Window>
